@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+.container {
+    max-width: 1064px;
+    margin:0 auto;
+    padding: 50px 20px;
+    background-color: rgba(168, 165, 164, 0.541);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font: 500 40px/48px "Roboto";
+}
+.wrapper {
+    max-width: 1024px;
+	height: 100%;
+	position: relative;
+}
+
+.wrapper > input {
+	display: none;
+}
+
+.slider {
+    width: 100%;
+    height: 900px;
+	background-color: #ddd;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+    border-radius: 50px;
+}
+
+
+.slides {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+	height: 900px;
+	position: absolute;
+	width: 100%;
+    opacity: 0;
+	z-index: 0;
+	transform: scale(1.5);
+	transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s;
+}
+
+.controls {
+    position: relative;
+    bottom: 100px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    width: 230px;
+    z-index: 10;
+    margin-left: auto;
+}
+
+
+
+.text1, .text2, .text3, .text4, .text5 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding-left: 20px;
+    font: 400 24px/24px 'Roboto';
+}
+
+
